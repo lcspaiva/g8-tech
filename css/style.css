@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+    font-size: 100%;
+    /* word-wrap: break-word; */
+}
+
+:root {
+    --color01: #308eb07c;
+    --color02: #307461b6;
+    --color03: #4EBC9D;
+    --color04: #b38d63;
+    --color05: #E95F52;
+    --back-color: rgb(255, 252, 248);
+}
+
+body {
+    height: 1000px;
+    width: 1000px;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh auto auto;
+}
+
+.header {
+    height: 300px;
+    grid-area: header;
+    background-color: #FFF0CA;
+    border-bottom: 1px solid var(--color05);
+}
+
+.main {
+    height: 1000px;
+    width: 500px;
+    background-color: var(--back-color);
+}
+
+.footer {
+    height: 230px;
+    grid-area: footer;
+    background-color: #52c7a631;
+    color: var(--color04);
+    border-bottom: 1px solid var(--color05);
+}
+
+.nav.container {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: center;
+}
+
+.nav-item.menu {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: var(--color05);
+    background-color: var(--back-color);
+    margin: auto;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.footer.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.footer address {
+    width: 60vw;
+    line-height: 2rem;
+}
+
+.footer .paragrafo {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.footer #linkedin {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../img/linkedin.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer #twitter {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../img/twitter.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer #instagram {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../img/instagram.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer #facebook {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../img/facebook.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,466 @@
+body{
+    background-image: url(../imagens/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: -10px 0px 13px 10px lightgray, 10px 0px 13px 10px lightgray, 5px 5px 15px 55px rgba(0,0,0,0);
+    font-family: Roboto, sans-serif;
+}
+
+/*Flex-box alinhado ao centro para deixar o conteúdo flexível*/
+.container_form{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 97.5%; */
+    /* height: 100%; */
+    justify-content: center;
+    background-color: rgb(233, 235, 240);
+    margin: auto;
+    padding-top: 100px;
+}
+
+/*Main ocupando 80vw da página com limite máximo de largura de 1200px*/
+.main{
+    width: 80vw;
+    max-width: 1200px;
+    /* background-color: rgb(182, 190, 207);     */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2em;
+    grid-template-areas: a a a;
+}
+
+/****************************Divs dividindo os campos no formulário de cadastro*********************************************/
+.A{
+    width: 30em;
+    height: 180PX;
+    padding: 20px;
+}
+
+.B{
+    width: 30em;
+    height: 180PX;
+    padding: 20px;
+}
+
+.C{
+    width: 30em;
+    height: 200px;
+    padding: 20px;
+}
+
+.D{
+    width: 30em;
+    height: 200px;
+    padding: 20px;
+}
+
+.divCpfCep{
+    display: flex;
+    width: 100%;
+}
+
+.divCepCpf{
+    margin-right: 10em;
+    align-self: left;
+}
+
+.divCpf{
+    width: 10em;
+    margin-right: 5.5em;
+}
+
+.divCep{
+    width: 10em;
+}
+
+/*************************************************Estilizando os Botões*******************************************************/
+#btn_enviar{
+    width: 6em;
+    height: 2em;
+    border-radius: 5px;    
+}
+
+#btn_limpar{
+    width: 6em;
+    height: 2em;
+    border-radius: 5px;
+}
+
+#logo {
+    width: 160px;
+}
+#logo:hover{    
+    transform: rotate(-10deg) scale(1.0);
+}
+
+#acess1 {
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: #307461;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+/*************************************************Estilizando Inputs*******************************************************/
+.inputText{
+    width: 35em;
+    height: 2em;
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+}
+
+.inputTextSelect{
+    width: 35em;
+    height: 2.4em;
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+}
+
+.inputText:cepCpf{
+    width: 5em;
+    height: 2em;
+    border-radius: 10px;  
+}
+
+.inputCpf{
+    width: 16em;
+    margin-right: 10em;
+    height: 2em;
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+}
+
+.inputCep{
+    width: 16em;
+    height: 2em;
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+}
+
+#idMensagem{
+    width: 28.5em;
+    height: 6em;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.label{
+    font-weight: bold;
+}
+
+fieldset{
+    border: 0px;
+}
+
+/*************************************************Divs de teste que serão substituidas*******************************************************/
+
+
+/* HEADER AND FOOTER */
+
+    .header {
+        height: auto;
+        /* background-color: #FFF0CA; */
+        border-bottom: 1px solid var(--color05);
+        background-image: url("../imagens/fundo_header.jpeg");
+    }
+
+    .footer {
+        height: 230px;
+        background-color: #52c7a631;
+        color: var(--color04);
+        border-bottom: 1px solid var(--color05);
+    }
+
+/***************************************** ALTERANDO **************************/
+    .nav.container {
+        display: flex;
+        width: 80vw;
+        height: 10vh;
+        justify-content: center;
+    }
+
+    .nav-item.menu {
+        text-decoration: underline;
+        font-size: 1.2rem;
+        color: var(--back-color);   
+        background-color: #307461;
+        margin: auto;
+        padding: 7px;
+        border-radius: 5px;
+        margin-top: 60px;
+    }
+
+    .nav-item a {
+        padding-top: 100px;
+    }
+
+    .nav-item.menu:hover, #acess1:hover {
+        background-color: #274c99 ;
+        cursor: pointer;
+    }
+
+    .footer.container_footer {
+        height: auto;
+    }
+
+    .footer address {
+        width: 40vw;
+        line-height: 1.8rem;
+        text-align: left;
+    }
+
+:root {
+    --color01: #308eb07c;
+    --color02: #307461b6;
+    --color03: #4EBC9D;
+    --color04: #b38d63;
+    --color05: #E95F52;
+    --back-color: rgb(255, 252, 248);
+}
+
+.redes_Sociais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#linkedin{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/linkedin.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#facebook{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/facebook.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#instagram{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/instagram.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#twitter{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/twitter.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#endereco {
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    margin-top: 25px; 
+}
+
+#pcnpj{
+    height: 10px;
+}
+
+#enderecoMobile{
+    display: none;
+}
+
+/*************************************************Acessibilidade*******************************************************/
+.zoom01 {
+    zoom: 1.2;
+}
+
+/* Tablet (width: 780px) */
+
+@media (max-width:780px) {
+    .container_form{
+        width: 96%
+    }
+
+    .container_footer {
+        font-size: smaller;
+    }
+
+    .zoom01 {
+        zoom: 1.05;
+    }
+}
+
+/* Mobile (width: 426px) */
+@media (max-width:426px) {
+/*************************************************Estilizando Inputs*******************************************************/
+        
+    .inputText{
+        width: 18em;
+        height: 2em;
+        border-radius: 10px;
+        border: 2px solid gainsboro;
+    }
+
+    .inputTextSelect{
+        width: 18em;
+        height: 2.4em;
+        border-radius: 10px;
+        border: 2px solid gainsboro;
+        margin-bottom: 10px;
+    }
+
+    .inputText:cepCpf{
+        width: 18em;
+        height: 2em;
+        border-radius: 10px; 
+        margin-bottom: 20px; 
+    }
+
+    .inputCpf{
+        width: 18em;
+        margin-right: 10em;
+        height: 2em;
+        border-radius: 10px;
+        border: 2px solid gainsboro;
+    }
+
+    .inputCep{
+        width: 18em;
+        height: 2em;
+        border-radius: 10px;
+        border: 2px solid gainsboro;
+    }
+
+    #idMensagem{
+        width: 14em;
+        height: 6em;
+        border: 2px solid gainsboro;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .label{
+        font-weight: bold;
+    }
+
+    .divCpfCep{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /*justify-content: space-between;*/
+    }
+
+    .A{
+        width: 18em;
+        height: 200px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .B{
+        width: 18em;
+        height: 190px;
+        padding: 0 20px;
+        margin-top: 0px;
+    }
+
+    .C{
+        width: 18em;
+        height: 200px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .D{
+        width: 18em;
+        height: 200px;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+
+    .divCep{
+        margin-top: 15px;
+    }
+
+
+    #endereco {
+       display: none;
+    }
+
+    
+    .footer.container_footer {
+        /* width: 22.0em; */
+        height: auto;
+        width: 103.4%;
+    }
+
+    #enderecoMobile{
+        display: block;
+        width: 20em;
+        height: auto;
+        text-align: center;
+        margin: 25px auto; 
+    }
+
+    .container_form{
+        /* width: 50px; */
+        padding-top: 0;
+    }
+
+    .header {
+        height: auto;
+        width: 103.4%;
+    }
+
+    #logo {
+        margin-top: -20px;
+        /* padding-left: 10px; */
+        zoom: 80%;
+    }
+
+    #acess1 {
+        zoom: 80%;
+    }
+
+    .nav.container {
+        flex-wrap: wrap;
+    }
+
+    .nav-item.menu {
+        zoom: 80%;
+        font-size: 14px;
+    }
+    #cadastro {
+        margin-top: -50px;
+        margin-left: 250px;
+    }
+
+    .zoom02 {
+        zoom: 1.05;
+        width: 108%
+    }
+}
+
+

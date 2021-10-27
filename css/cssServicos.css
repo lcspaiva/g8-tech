@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    font-size: 100%;
+}
+:root {
+    --color01: #308eb07c;
+    --color02: #307461b6;
+    --color03: #4EBC9D;
+    --color04: #b38d63;
+    --color05: #E95F52;
+    --back-color: rgb(255, 252, 248);
+}
+
+body {
+    background-image: url(../imagens/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: -10px 0px 13px 10px lightgray, 10px 0px 13px 10px lightgray, 5px 5px 15px 55px rgba(0,0,0,0)
+}
+#logo {
+    width: 160px;
+}
+
+#logo:hover{    
+    transform: rotate(-10deg) scale(1.0);
+}
+#acess1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #307461;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.header {
+    height: auto;
+    /* background-color: #FFF0CA; */
+    border-bottom: 1px solid var(--color05);
+    background-image: url("../imagens/fundo_header.jpeg");
+}
+
+.footer {
+    /* height: 230px; */
+    height: auto;
+    background-color: #52c7a631;
+    color: var(--color04);
+    border-bottom: 1px solid var(--color05);
+}
+
+.nav.container {
+    display: flex;
+    width: 80vw;
+    height: 10vh;
+    justify-content: center;
+}
+
+.nav-item.menu {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: var(--back-color);   
+    background-color: #307461;
+    margin: auto;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.nav-item.menu:hover, #acess1:hover {
+    background-color: #274c99 ;
+    cursor: pointer;
+}
+
+.footer.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.footer address {
+    width: 40vw;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+.footer .paragrafo {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.footer #linkedin {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../imagens/linkedin.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer #twitter {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../imagens/twitter.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer #instagram {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../imagens/instagram.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer #facebook {
+    align-items: center;
+    width: 4vw;
+    background-image: url('../imagens/facebook.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ***** ACESSIBILIDADE ***** */
+.zoom01 {
+    zoom: 1.2;
+}
+
+.zoom02 {
+    zoom: 1.03;
+}
+
+/* *{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+} */
+
+
+/* *************** TEMPORÁRIO ************** */
+/* .bg-header{
+    width: 100%;
+    height: 50px;
+    background-color: gold;
+}
+/
+main{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+/*
+.bg-footer{
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    margin-top: 40px;
+} */
+
+/********************* Estilo Pag4 O.O **************/
+/* estilização da tabela */
+main{
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+table{
+    border-collapse: collapse; /* faz com que a borda fique uma listrinha só*/
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* estilização do cabeçalho da tabela */
+table th{
+    background-color: gold;
+}
+table td{
+    text-align: center;
+}
+
+/* classe para formatar quando quiser alinhar ao centro */
+.first-txt-center{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* é a area em que ficarão os itens que receberão as informações de cadastro */
+.card-info{
+    margin-top: 30px;
+    background-color: whitesmoke;
+    width: 80%;
+    height: auto;
+    font-size: larger;
+}
+
+/* classe dos campos de input */
+.area-input{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#servicosSel{
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+.box-listas{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* lista dos serviços que fica no card de info */
+.lista-servicos{
+    list-style: none; 
+}
+
+/* lista de inputs no card de info */
+.lista-input{
+    /* border: 2px solid red; */
+    display: inline-block;
+    line-height: 2;
+    font-size: larger;
+}
+
+/* id da lista que fica a direita (lista do tamanho da empresa) */
+#listaEmpresa{
+    /* border: 2px solid green; */
+    float: right;
+}
+/* campo de input dentro do card-input */
+.input-form{
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    border-radius: 12px;
+    border: 2px solid gold;
+   
+}
+
+/* area em que serão exibidos os valores parciais dos serviços cadastrados */
+.area-valor{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /* background-color: red; */
+    width: 80%;
+    height: 60px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: right;
+}
+/* são as divs que contém os valores referentes aos itens */
+.campo-valor{
+    border: 2px solid gold;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+/* selecionando o primeiro filho da section area-valor */
+.campo-valor:nth-child(1){
+    margin-right: 20px;
+}
+
+/* selecionando os p dentro da div area valor */
+.area-valor p{
+    display: inline-block;
+}
+
+.area-botoes{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* estilizando os botoes */
+.botao {
+    background-color: gold; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* define comportamento de quando o mouse for passado por cima dos botoes*/
+.botao:hover{
+    background-color: yellow;
+}
+
+/* estilização da tabela que receberá os itens a serem listados */
+.tabela{
+    margin-top: 15px;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 200px; 
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px){
+    *{
+        font-size: small;        
+    }   
+    #servicosSel{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .input-form{
+        width: 95%;
+    }
+    .area-input{
+        margin-left: 0;
+    
+    }
+    #logo {
+        zoom: 75%;
+    }
+    .header {
+        height: auto;
+    }
+    .zoom02 {
+        zoom: 1.01;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    #servicosSel{
+        width: 80%;
+    }
+    .area-input{
+        margin-left: 0;
+    }
+    .input-form{
+        width: 97%;
+    }
+    main{
+        margin-top: 20px;
+    }
+    #cadastro {
+        margin-top: -40px;
+        margin-left: 200px;
+    }
+    .header {
+        height: auto;
+    }
+    .redes_Sociais a {
+        zoom: 1.5;
+    }
+    .tabela {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .area-valor {
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: -70px;
+        margin-top: 10px;
+    }
+    #totalPreco {        
+        margin-right:40px;
+    }
+    .nav-item.menu {
+        font-size: 12px;
+        /* margin-bottom: 10px; */
+        /* margin-left: 10px;   */
+    }
+    #acess1{
+        zoom: 80%;
+    }
+}
+
+.img-icon{
+    width: 20px;
+    height: 20px;
+}
+
+/********** CAIXA DE DIÁLOGO Pag4 O.O ************/
+/* é a caixa que abrirá quando o usuário confirmar as opçoes */
+.alerta{
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    position:absolute;
+    /* top: 200px;
+    left: 200px; */
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px black;
+    z-index: 2;
+    display: none; 
+    /* border-radius: 15px; */
+}
+
+/* é a barra do alerta */
+.toolbar{
+    height: 25px;
+    background-color: gold;
+    /* border-top-left-radius: 15px; */
+    /* border-top-right-radius: 15px; */
+}
+
+/* é o botao [X] que fica na barra superior e fecha a caixa */
+#botaoFecha{
+    border: 1px solid black;
+    width: 17px;
+    height: 17px;
+    float: right;
+}
+
+/* comportamento pra quando o user passar o mouse em cima do [X] ele mudar de cor  e ficar
+com o cursor de maozinha*/
+#botaoFecha:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* é a div que carrega o texto que vai na barra superior */
+#textoBarra{
+    font-size: large;
+    font-weight: bolder;
+    float: left;
+    display: flex;
+    margin-left: 10px;
+    color: black;
+}
+
+/* é o texto que vai dentro da caixa de diálogo e indica a msg de retorno ao usuário */
+.textoAlerta{
+    font-size: larger;
+    color: black;
+    font-weight: 800;
+    position: relative;
+    top: 25px;
+    margin-left: 15px;
+}
+
+/* é o botão que confirma o diálogo com o usuário */
+#botaoConfirma{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+/****************INICIO - VERIFICAR REFERENTE AO FOOTER************ */
+    
+.redes_Sociais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+#linkedin{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/linkedin.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#facebook{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/facebook.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#instagram{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/instagram.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#twitter{
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/twitter.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#endereco {
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    margin-top: 25px; 
+}
+
+
+
+
+    /****************FIM - VERIFICAR REFERENTE AO FOOTER************ */

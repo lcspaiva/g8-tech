@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!---------------------------------------------- HEAD --------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO DA PÁGINA -->
+    <title>G8 Tech!</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="icon" type="image/x-icon" href="imagens/logo3.g8.png" />
+
+    <!-- AUTOR --> 
+    <meta name="author" content="G8" />
+
+    <!-- DESCRIÇÃO -->
+    <meta name="description" content="Site de portfolio desenvolvedores web" />
+
+    <!-- KEYWORDS -->
+    <meta name="keywords" content="desenvolvedor, front-end, back-end, fullstack" />
+
+    <!-- FONTE -->
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<!---------------------------------------------- BODY --------------------------------------------->
+<body>
+
+    <!-- Botão de Acessibilidade -->
+    <!-- Header -->
+    <header class="header">
+
+        <div style="text-align: right;"><button id="acess1">A+</button></div>
+        <nav class="nav container" id="menu">
+            <a href="index.html" class="nav-item">
+                <img src="imagens/logo3.g8.2.png" alt="logotipo" id="logo">
+            </a>
+            <a href="index.html" class="nav-item menu">Página Inicial</a>
+            <a href="#sobreNos" class="nav-item menu">Sobre nós</a>
+            <a href="servicos.html" class="nav-item menu" target="_blank">Serviços</a>
+            <a href="cadastro.html" class="nav-item menu" target="_blank">Cadastro</a>
+        </nav>
+    </header>
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!---------------------------------------------- Main --------------------------------------------->
+
+    <main>
+        <!-- Abertura da Sessão Nossos Trabalhos -->
+        <section id="nossosTrabalhos">
+            <div id="divNT1">
+                <h1>Nossos Trabalhos</h1>
+                <p>Apresentamos a vocês os últimos trabalhos realizados em desenvolvimento Web - utilizando HTML, CSS,
+                    JavaScript e jQuery.</p><br>
+                <p>Apesar da nossa especialidade estar envolvida com a criação de novos projetos de páginas Web em
+                    geral, a G8 Tech! também possui serviços de suporte, otimização e manutenção de WebSites já criados.
+                </p>
+                <button><a href="servicos.html">Faça seu orçamento<span class="flecha">&gt;</span></a></button>
+            </div>
+            <div id="divNT2"></div>
+        </section>
+        <!-- Encerramento da Sessão Nossos Trabalhos -->
+        <!-- Abertura da Sessão Trabalhos Recentes -->
+        <section id="trabalhosRecentes">
+            <!-- Primeira linha da flexbox -->
+            <div class="trabalho">
+                <h3>Calculadora Simples e <br>Calculadora Científica</h3>
+                </h3>
+                <a href="calculadora.html">Acesse aqui <span class="flecha">&gt;</span></a>
+            </div>
+            <div class="trabalho">
+                <h3>Sustentabilidade</h3>
+                <a href="https://github.com/andremorelli/projetocsssoulcoder/" target="_blank">Acesse aqui <span
+                        class="flecha">&gt;</span></a>
+            </div>
+            <div class="trabalho">
+                <h3>Projekcii</h3>
+                <a href="https://carol-rodrigues.github.io/Projekcii-2" target="_blank">Acesse aqui <span
+                        class="flecha">&gt;</span></a>
+            </div>
+            <!-- Div para quebrar a linha da flexbox -->
+            <div class="break"></div>
+            <!-- Segunda linha da flexbox -->
+            <div class="trabalho">
+                <h3>Tetty's Dog</h3>
+                <a href="https://fabiomdg1.github.io/Projeto-CSS/" target="_blank">Acesse aqui <span
+                        class="flecha">&gt;</span></a>
+            </div>
+            <div class="trabalho">
+                <h3>Atelie Digital</h3>
+                <a href="https://altgsp.github.io/AtelieDigital/" target="_blank">Acesse aqui <span
+                        class="flecha">&gt;</span></a>
+            </div>
+            <div class="trabalho">
+                <h3>Enroter</h3>
+                <a href="https://github.com/lcspaiva/ProjetoFinal-SoulCode-Ver2" target="_blank">Acesse aqui <span
+                        class="flecha">&gt;</span></a>
+            </div>
+        </section>
+        <!-- Encerramento da Sessão Trabalhos Recentes -->
+        <!-- Abertura da Sessão Sobre Nós -->
+        <section id="sobreNos">
+            <h1>Sobre nós</h1>
+            <p class="descricaoSN">Contamos com profissionais qualificados para a execução de nossos trabalhos. Nosso
+                time atua nas áreas de
+                desenvolvimento Front-End, Back-End e Full Stack. Os projetos são realizados por toda nossa equipe,
+                considerando as hard-skills de cada um dos 5 co-fundadores da G8 Tech!</p>
+            <!-- Criação da grid area que receberá os cartões rotativos com informação sobre a empresa e fundadores (grid items) -->
+            <div id="main-grid">
+                <div id="objectives" class="grid-item">
+                    <!-- Divisão das áreas do cartão rotativo, para estabelecer o tamanho e localização de cada um na página -->
+                    <div class="cartaoRotativo">
+                        <!-- Criação de nova div para colocar o efeito de rotação do cartão -->
+                        <div class="cartaoInterno">
+                            <!-- Parte frontal do cartão com as fotos ou logo -->
+                            <div class="frenteCartao">
+                                <img src="imagens/logo3.g8.png" alt="Avatar" style="padding-top: 25px;">
+                            </div>
+                            <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
+                            <div class="versoCartao">
+                                <h2 class="descricao" id="nomeG8">G8 Tech!</h2>
+                                <h3 class="descricao">Objetivos / escopo</h3>
+                                <p class="descricao" id="descricaoG8">Somos uma empresa de tecnologia, com foco em
+                                    serviços de desenvolvimento web. Nossos trabalhos são realizados pelos próprios
+                                    fundadores da G8. Buscamos alinhar as hard-skills e soft-skills de cada integrante,
+                                    sempre conversando e dividindo os trabalhos em conjunto buscando o
+                                    melhor para nossos clientes.
+                                </p>
+                                <div class="desc2">
+                                    <h2>G8 Tech!</h2>
+                                    <p style="margin-top: 5px; white-space: pre-wrap;">WebPages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coFounder1" class="grid-item">
+                    <!-- Divisão das áreas do cartão rotativo, para estabelecer o tamanho e localização de cada um na página -->
+                    <div class="cartaoRotativo">
+                        <!-- Criação de nova div para colocar o efeito de rotação do cartão -->
+                        <div class="cartaoInterno">
+                            <!-- Parte frontal do cartão com as fotos ou logo -->
+                            <div class="frenteCartao">
+                                <img src="imagens/Andre.jpeg" alt="Avatar">
+                            </div>
+                            <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
+                            <div class="versoCartao">
+                                <h2 class="descricao">André Morelli</h2>
+                                <p class="descricao">Responsável pela implementação do projeto da calculadora simples e
+                                    científica, André é um dos fundadores originais da G8 Tech! Em seu primeiro projeto,
+                                    André fez parte do grupo de sustentabilidade, que pode ser visto nos trabalhos mais
+                                    recentes.
+                                </p>
+                                <div class="desc2">
+                                    <h2>André Morelli</h2>
+                                    <p style="margin-top: 5px; white-space: pre-wrap;">Calculadora simples e científica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coFounder2" class="grid-item">
+                    <!-- Divisão das áreas do cartão rotativo, para estabelecer o tamanho e localização de cada um na página -->
+                    <div class="cartaoRotativo">
+                        <!-- Criação de nova div para colocar o efeito de rotação do cartão -->
+                        <div class="cartaoInterno">
+                            <!-- Parte frontal do cartão com as fotos ou logo -->
+                            <div class="frenteCartao">
+                                <img src="imagens/Carol.jpeg" alt="Avatar">
+                            </div>
+                            <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
+                            <div class="versoCartao">
+                                <h2 class="descricao">Carolina R. Arangues</h2>
+                                <p class="descricao">Integrante do time de fundadores originais da G8, Carol iniciou seu
+                                    portfólio com um projeto de e-commerce de projetores móveis e portáteis. No projeto
+                                    da G8, foi responsável pela criação da landing page e suas funcionalidades.
+                                </p>
+                                <div class="desc2">
+                                    <h2>Carolina Arangues</h2>
+                                    <p style="margin-top: 5px; white-space: pre-wrap;">Landing page</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coFounder3" class="grid-item">
+                    <!-- Divisão das áreas do cartão rotativo, para estabelecer o tamanho e localização de cada um na página -->
+                    <div class="cartaoRotativo">
+                        <!-- Criação de nova div para colocar o efeito de rotação do cartão -->
+                        <div class="cartaoInterno">
+                            <!-- Parte frontal do cartão com as fotos ou logo -->
+                            <div class="frenteCartao">
+                                <img src="imagens/Fabio.jpeg" alt="Avatar">
+                            </div>
+                            <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
+                            <div class="versoCartao">
+                                <h2 class="descricao">Fábio M. Godoy</h2>
+                                <p class="descricao">Seu projeto inicial foi a criação de um pet shop chamado de Tetty's
+                                    Shop. Também fundador original da G8, Fábio foi responsável pela criação da página
+                                    de cadastro e implementação das funcionalidades de validação dos dados da página.                                
+                                </p>
+                                <div class="desc2">
+                                    <h2>Fábio Godoy</h2>
+                                    <p style="margin-top: 5px; white-space: pre-wrap;">Cadastro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coFounder4" class="grid-item">
+                    <!-- Divisão das áreas do cartão rotativo, para estabelecer o tamanho e localização de cada um na página -->
+                    <div class="cartaoRotativo">
+                        <!-- Criação de nova div para colocar o efeito de rotação do cartão -->
+                        <div class="cartaoInterno">
+                            <!-- Parte frontal do cartão com as fotos ou logo -->
+                            <div class="frenteCartao">
+                                <img src="imagens/Geisa.jpeg" alt="Avatar">
+                            </div>
+                            <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
+                            <div class="versoCartao">
+                                <h2 class="descricao">Geisa Santos</h2>
+                                <p class="descricao">Responsável pela criação do header e footer de todas as páginas,
+                                    Geisa elaborou o logo de nossa G8 Tech! Com o olhar de artista que é notável em seu
+                                    projeto Atelie Digital, essa fundadora original deu seu toque pessoal em nossa
+                                    paleta de cores e todo design da G8.
+                                </p>
+                                <div class="desc2">
+                                    <h2>Geisa Santos</h2>
+                                    <p style="margin-top: 5px; white-space: pre-wrap;">Header, footer, logo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coFounder5" class="grid-item">
+                    <!-- Divisão das áreas do cartão rotativo, para estabelecer o tamanho e localização de cada um na página -->
+                    <div class="cartaoRotativo">
+                        <!-- Criação de nova div para colocar o efeito de rotação do cartão -->
+                        <div class="cartaoInterno">
+                            <!-- Parte frontal do cartão com as fotos ou logo -->
+                            <div class="frenteCartao">
+                                <img src="imagens/Lucas.jpeg" alt="Avatar">
+                            </div>
+                            <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
+                            <div class="versoCartao">
+                                <h2 class="descricao">Lucas Paiva</h2>
+                                <p class="descricao">Responsável pela elaboração da página para realização de orçamentos
+                                    dos serviços da G8, Lucas também faz parte do time dos fundadores originais do
+                                    Grupo. Em seu primeiro projeto, trabalhou com logística reversa.
+                                </p>
+                                <div class="desc2">
+                                    <h2>Lucas Paiva</h2>
+                                    <p style="margin-top: 5px; white-space: pre-wrap;">Orientação a Objetos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Encerramento da Sessão Sobre Nós -->
+        <!-- Abertura da Sessão Inscreva-se -->
+        <section id="inscreva">
+            <div id="inscreva1">
+                <p>Não perca as últimas notícias</p>
+                <h1>Inscreva-se</h1>
+                <p>Acesse nosso formulário para assinar a Newsletter da G8 e ficar por dentro das últimas novidades.</p>
+                <button><a href="cadastro.html">Clique aqui<span class="flecha">&gt;</span></a></button>
+            </div>
+            <div id="inscreva2">
+                <p id="nome"></p>
+            </div>
+        </section>
+        <!-- Encerramento da Sessão Inscreva-se -->
+    </main>
+    <footer class="footer container_footer">
+            <div class="redes_Sociais">
+                <p>Redes Sociais</p>
+                <a href="#"><div id="linkedin"></div></a>
+                <a href="#"><div id="instagram"></div></a>
+                <a href="#"><div id="facebook"></div></a>
+                <a href="#"><div id="twitter"></div></a>
+            </div>
+            <address id="endereco">
+                <i><b>G-8 Tech! LTDA.</b> </i> <br/> CNPJ:00.123.456/0007-89 . Endereço: Rua Pedro de Alencar, 758-A, Lote 1, Bandeirantes; <br/>
+                São Paulo-SP - Grupo: G8-Tech! <br/>
+                Precisa de nossa ajuda?
+                <a href="g8tech@contatog8.com.br">Contate-nos</a>
+                <p>&copy; Todos os direitos reservados.</p>
+            </address>
+        </footer>
+    <script src="js/script_index.js"></script>
+</body>
+
+</html>

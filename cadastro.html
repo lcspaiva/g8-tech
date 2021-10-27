@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!---------------------------------------------- HEAD --------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO DA PÁGINA -->
+    <title>G8 Tech!</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cadastro.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="imagens/logo3.g8.png" />
+
+    <!-- AUTOR -->
+    <meta name="author" content="G8" />
+
+    <!-- DESCRIÇÃO -->
+    <meta name="description" content="Site de portfolio desenvolvedores web" />
+
+    <!-- KEYWORDS -->
+    <meta name="keywords" content="desenvolvedor, front-end, back-end, fullstack" />
+
+    <!-- FONTE -->
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script type="text/Javascript" src="js/cep.js"></script>
+
+</head>
+
+<!---------------------------------------------- BODY --------------------------------------------->
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Botão de Acessibilidade -->
+        <div style="text-align: right;">
+            <button id="acess1">A+</button>
+        </div>
+
+        <nav class="nav container" id="menu">
+            <a href="index.html" class="nav-item">
+                <img src="imagens/logo3.g8.2.png" alt="logotipo" id="logo">
+            </a>
+
+            <a href="index.html" class="nav-item menu">Página Inicial</a>
+            <a href="index.html#sobreNos" class="nav-item menu">Sobre nós</a>
+            <a href="servicos.html" class="nav-item menu">Serviços</a>
+            <a href="cadastro.html" class="nav-item menu" id="cadastro">Cadastro</a>
+        </nav>
+    </header>
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!---------------------------------------------- Main --------------------------------------------->
+
+    <main>
+        <!-- Formulário -->
+        <form>
+            <fieldset class="container_form">
+                <div class="A">
+                    <labe class="label" for="nome">Nome: </labe><br>
+                    <input class="inputText" type="text" id="idNome" name="nome" required>
+                    <br><br>
+                    <label class="label" for="email">E-mail: </label><br>
+                    <input class="inputText" type="email" id="idEmail" name="Email" required>
+                    <br><br>
+                    <label class="label" for="telefone">Telefone: </label><br>
+                    <input class="inputText" type="text" id="idTelefone" name="telefone" required>
+                    <br><br>
+                </div>
+
+                <div class="B">
+                    <label class="label" for="dataDeNascimento">Data de Nascimento: </label><br>
+                    <input class="inputText" type="date" id="idDataNasc" name="dataDeNascimento" required>
+                    <br><br>
+
+                    <!--  -->
+
+                    <label class="label" for="genero">Gênero: </label><br>
+                    <select class="inputTextSelect" name="genero" id="genero">
+                        <option value=""></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                    <br><br>
+                    <!--  -->
+                    <div class="divCpfCep">
+                        <div class="divCpf">
+                            <label class="label" for="cpf">CPF: </label><br>
+                            <input class="inputCpf" type="text" id="idCpf" name="cpf" maxlength="11"
+                                placeholder="Digite apenas números" required>
+                        </div>
+                        <div class="divCep">
+                            <label class="label" for="cep">Cep: </label><br>
+                            <input class="inputCep" type="text" id="cep" name="cep" maxlength="8"
+                                placeholder="Digite apenas números" onblur="consultaCep()" required>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+
+                <div class="D">
+                    <label class="label" for="logradouro">Rua: </label><br>
+                    <input class="inputText" type="text" id="logradouro" name="rua" required>
+
+                    <br><br>
+
+                    <label class="label" for="bairro">Bairro: </label><br>
+                    <input class="inputText" type="text" id="bairro" name="bairro" required>
+
+                    <br><br>
+
+                    <div class="divCpfCep">
+                        <div class="divCpf">
+                            <label class="label" for="localidade">Cidade: </label><br>
+                            <input class="inputCpf" type="text" id="localidade" name="cpf" required>
+                        </div>
+                        <div class="divCep">
+                            <label class="label" for="uf">Estado: </label><br>
+                            <input class="inputCep" type="text" id="uf" name="estado" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="C">
+                    <label class="label" for="mensagem">Mensagem: </label><br>
+                    <!-- <input class="inputText" type="text" id="idMensagem" name="mensagem">                         -->
+                    <textarea class="inputText" type="text" id="idMensagem" name="mensagem" required></textarea><br><br>
+                    <button type="submit" id="btn_enviar">Cadastrar</button>
+                    <button type="reset" id="btn_limpar">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer class="footer container_footer">
+        <div class="redes_Sociais">
+            <p>Redes Sociais</p>
+            <a href="#">
+                <div id="linkedin"></div>
+            </a>
+            <a href="#">
+                <div id="instagram"></div>
+            </a>
+            <a href="#">
+                <div id="facebook"></div>
+            </a>
+            <a href="#">
+                <div id="twitter"></div>
+            </a>
+        </div>
+        <address id="endereco">
+            <b>G-8 Tech! LTDA.</b><br /> CNPJ:00.123.456/0007-89 . Endereço: Rua Pedro de Alencar, 758-A, Lote 1,
+            Bandeirantes; <br />
+            São Paulo-SP - Grupo: G8-Tech! <br />
+            Precisa de nossa ajuda?
+            <a href="g8tech@contatog8.com.br">Contate-nos</a>
+            <p>&copy; Todos os direitos reservados.</p>
+        </address>
+
+        <address id="enderecoMobile">
+            <b>G-8 Tech! LTDA.</b><br /> CNPJ:00.123.456/0007-89.<br />
+            Endereço: Rua Pedro de Alencar, 758-A<br />
+            Lote 1, Bandeirantes; <br />
+            São Paulo-SP - Grupo: G8-Tech! <br />
+            Precisa de nossa ajuda?
+            <a href="g8tech@contatog8.com.br">Contate-nos</a>
+            <p>&copy; Todos os direitos reservados.</p>
+        </address>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <script src="js/javaScript_cadastro.js"></script>
+</body>
+
+</html>
